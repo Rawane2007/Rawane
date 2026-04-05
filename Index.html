@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty by Raw</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f0e6;
+    }header {
+  background-color: #800020;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  font-family: 'Georgia', serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  color: #800020;
+}
+
+.info-box {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #800020;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body><header>Beauty by Raw</header><div class="container">  <!-- THE ORDINARY -->  <div class="product">
+    <button class="toggle-btn" onclick="toggleInfo(this)">i</button>
+    <img src="images/niacinamide.jpg">
+    <h3>The Ordinary Niacinamide 10% + Zinc</h3>
+    <div class="info-box">
+      <p><b>Benefits:</b> Reduces acne, controls oil, minimizes pores</p>
+      <p><b>Usage:</b> Apply morning and night before moisturizer</p>
+    </div>
+  </div>  <div class="product">
+    <button class="toggle-btn" onclick="toggleInfo(this)">i</button>
+    <img src="images/hyaluronic.jpg">
+    <h3>The Ordinary Hyaluronic Acid</h3>
+    <div class="info-box">
+      <p><b>Benefits:</b> Deep hydration for the skin</p>
+      <p><b>Usage:</b> Apply on damp skin before cream</p>
+    </div>
+  </div>  <div class="product">
+    <button class="toggle-btn" onclick="toggleInfo(this)">i</button>
+    <img src="images/aha-bha.jpg">
+    <h3>The Ordinary AHA 30% + BHA 2%</h3>
+    <div class="info-box">
+      <p><b>Benefits:</b> Exfoliates skin, removes dark spots</p>
+      <p><b>Usage:</b> Use once a week only</p>
+    </div>
+  </div>  <!-- MEDICUBE -->  <div class="product">
+    <button class="toggle-btn" onclick="toggleInfo(this)">i</button>
+    <img src="images/medicube-red.jpg">
+    <h3>Medicube Red Serum</h3>
+    <div class="info-box">
+      <p><b>Benefits:</b> Treats acne and soothes skin</p>
+      <p><b>Usage:</b> Use once daily after toner</p>
+    </div>
+  </div>  <div class="product">
+    <button class="toggle-btn" onclick="toggleInfo(this)">i</button>
+    <img src="images/medicube-collagen.jpg">
+    <h3>Medicube Collagen Cream</h3>
+    <div class="info-box">
+      <p><b>Benefits:</b> Firms skin and reduces wrinkles</p>
+      <p><b>Usage:</b> Use as final step in routine</p>
+    </div>
+  </div>  <!-- PURITO -->  <div class="product">
+    <button class="toggle-btn" onclick="toggleInfo(this)">i</button>
+    <img src="images/purito-centella.jpg">
+    <h3>Purito Centella Serum</h3>
+    <div class="info-box">
+      <p><b>Benefits:</b> Calms skin and reduces redness</p>
+      <p><b>Usage:</b> Apply daily after cleansing</p>
+    </div>
+  </div>  <!-- DR ALTHEA -->  <div class="product">
+    <button class="toggle-btn" onclick="toggleInfo(this)">i</button>
+    <img src="images/vitamin-c.jpg">
+    <h3>Dr Althea Vitamin C Serum</h3>
+    <div class="info-box">
+      <p><b>Benefits:</b> Brightens skin and fades dark spots</p>
+      <p><b>Usage:</b> Use in the morning with sunscreen</p>
+    </div>
+  </div></div><script>
+function toggleInfo(button) {
+  const info = button.parentElement.querySelector('.info-box');
+  info.style.display = info.style.display === 'block' ? 'none' : 'block';
+}
+</script></body>
+</html>
